@@ -1,0 +1,14 @@
+# ----------------------------------------
+# Pages and screens: Page path and screen class
+# Account: Ian Shiffler
+# Property: IanS
+# ----------------------------------------
+# 
+# All Users
+# Start date: 20260303
+# End date: 20260330
+Page path and screen class,Views,Active users,Views per active user,Average engagement time per active user,Event count,Key events,Total revenue
+/lab06-ishiffler/questionnaire.html,45,10,4.5,35.1,129,0,0
+/lab06-ishiffler/,31,12,2.5833333333333335,4.083333333333333,84,0,0
+/lab06-ishiffler/analytics.html,4,2,2,12,9,0,0
+/lab06-ishiffler/data.html,1,1,1,1,3,0,0
