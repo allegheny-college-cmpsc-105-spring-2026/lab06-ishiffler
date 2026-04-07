@@ -2,28 +2,33 @@
 title: Report
 ---
 
-TODO: Write your report in this `report.qmd` file using markdown syntax.
+: Write your report in this `report.qmd` file using markdown syntax.
 
 ## What this was lab about
 
-TODO: Briefly summarize what this lab was about and what you did at a high level.
+: Briefly summarize what this lab was about and what you did at a high level.
+To start we had to create a website with a survey and track the analytics on the website and the data on the survey. After collecting that data, we converted the data into files and started to analyze them. This lab involved analyzing two datasets: data_analytics.csv (Google Analytics data) and data_survey.csv (survey responses). We used Python with the pandas and matplotlib libraries to load, explore, and visualize these datasets to understand website usage patterns and classmate preferences.
 
 ## Methods
 
-TODO: Briefly talk about the methods you used to gather the data and any specific functions that helped reveal the patterns.
-
+: Briefly talk about the methods you used to gather the data and any specific functions that helped reveal the patterns.
+We used google analytics to collect the data of our website and google forms for the survey data. After that, Data was gathered from Google Analytics (for website usage) and a survey (for classmate preferences). The pandas library was used to read CSV files into DataFrames (dfa and dfs) using pd.read_csv(). Data exploration and pattern revelation were primarily done using matplotlib.pyplot to create bar charts. Specifically, dfa['Views'] was plotted against dfa['Page path and screen class'] to visualize website views, and dfs['What is your favorite sport?'].value_counts().plot(kind='bar') was used to show the distribution of favorite sports from the survey.
 ## Findings
 
-TODO: Briefly restate what you found out about your classmates by exploring the data. 
-
-TODO: Briefly restate what your found out about your site usage by exploring the Google Analytics Data.
-
+: Briefly restate what you found out about your classmates by exploring the data. 
+I found that my classmates top sports are football and ultimate frisbee. I also discovered that the two top favorite colors in the class are orange and yellow.
+: Briefly restate what your found out about your site usage by exploring the Google Analytics Data.
+As shown in Figure 1: Views by Page Path and Screen Class, the analytics data indicates that the questionaire page received the most views, followed by the base path. This suggests a higher engagement with the questionnaire page compared to other sections of the site.
 Please refer to the figures you made in the notebook by title. For example, "As shown in figure 1..."
 
 ## Discussion
 
-TODO: Briefly mention how data gathering can help you answer specific questions.
-
+: Briefly mention how data gathering can help you answer specific questions.
+Data gathering, through methods like surveys and web analytics, is crucial for answering specific questions about user behavior, preferences, and the effectiveness of online content. For example, by collecting survey data, we can understand demographic interests, and by collecting analytics data, we can identify popular content or areas needing improvement.
 ## Future directions
 
-TODO: Briefly state what could be explored within the data in the future, building on what you already did. Your answer must be something that you could actually do with the data, related to this lab.
+: Briefly state what could be explored within the data in the future, building on what you already did. Your answer must be something that you could actually do with the data, related to this lab.
+This lab was about collectiing data and anaylitics from a survey and website that we had to create.
+## Methods
+
+Building on this analysis, future explorations could involve correlating the survey responses with the analytics data if a common identifier or time reference were available. For example, if the survey included questions about how often respondents visit the website, we could analyze if there's a relationship between stated preferences and actual site usage patterns. Another direction could be to analyze the 'Average engagement time per active user' from the dfa to understand user stickiness on different pages, or to perform more detailed text analysis on open-ended survey responses if they were available.
